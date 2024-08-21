@@ -137,7 +137,7 @@
                             will make you eat healthy again. Tailored to your
                             personal tastes and nutritional needs.
                         </p>
-                        <a href="#!" class="btn btn--full mr-16">
+                        <a href="#!" class="btn btn--full mr-14-5">
                             Start eating well
                         </a>
                         <a href="#!" class="btn btn--outline">Learn more ↓</a>
@@ -646,7 +646,7 @@
                     <!-- Pricing Plan Options -->
                     <div class="grid grid--2-cols mb-48">
                         <!-- Pricing Plan 1 -->
-                        <div class="pricing__plan">
+                        <div class="pricing__plan pricing__plan--normal">
                             <header class="pricing__plan--header">
                                 <p class="pricing__plan--header-name">
                                     Starter
@@ -670,15 +670,18 @@
                                 </li>
                                 <li class="pricing__plan--list-item">
                                     <!-- Svg -->
+                                    <span>None</span>
                                 </li>
                             </ul>
                             <div class="pricing__plan--sign-up">
-                                Start eating well
+                                <a href="#!" class="btn btn--full"
+                                    >Start eating well</a
+                                >
                             </div>
                         </div>
 
                         <!-- Pricing Plan 2 -->
-                        <div class="pricing__plan">
+                        <div class="pricing__plan pricing__plan--best-value">
                             <header class="pricing__plan--header">
                                 <p class="pricing__plan--header-name">
                                     Complete
@@ -692,10 +695,12 @@
                             </header>
                             <ul class="pricing__plan--list">
                                 <li class="pricing__plan--list-item">
-                                    <span>2 meals per day</span>
+                                    <span>
+                                        <strong>2 meals</strong> per day
+                                    </span>
                                 </li>
                                 <li class="pricing__plan--list-item">
-                                    <span>Order 24/7</span>
+                                    <span>Order <strong>24/7</strong></span>
                                 </li>
                                 <li class="pricing__plan--list-item">
                                     <span>Delivery is free</span>
@@ -705,7 +710,9 @@
                                 </li>
                             </ul>
                             <div class="pricing__plan--sign-up">
-                                Start eating well
+                                <a href="#!" class="btn btn--full"
+                                    >Start eating well</a
+                                >
                             </div>
                         </div>
                     </div>
@@ -722,9 +729,10 @@
 
             <!-- Features -->
             <div class="section__features">
-                <div class="container grid--4-cols">
+                <div class="container grid grid--4-cols">
                     <!-- Feature Item 1 -->
                     <div class="feature">
+                        <!-- Icon -->
                         <p class="feature-title">Never cook again!</p>
                         <p class="feature-text">
                             Our subscriptions cover 365 days per year, even
@@ -734,6 +742,7 @@
 
                     <!-- Feature Item 2 -->
                     <div class="feature">
+                        <!-- Icon -->
                         <p class="feature-title">Local and organic</p>
                         <p class="feature-text">
                             Our cooks only use local, fresh, and organic
@@ -743,6 +752,7 @@
 
                     <!-- Feature Item 3 -->
                     <div class="feature">
+                        <!-- Icon -->
                         <p class="feature-title">No waste</p>
                         <p class="feature-text">
                             All our partners only use reusable containers to
@@ -752,6 +762,7 @@
 
                     <!-- Feature Item 4 -->
                     <div class="feature">
+                        <!-- Icon -->
                         <p class="feature-title">Pause anytime</p>
                         <p class="feature-text">
                             Going on vacation? Just pause your subscription, and
@@ -762,10 +773,191 @@
             </div>
 
             <!-- Cta -->
-            <section class="section__cta"></section>
+            <section class="section__cta">
+                <div class="container">
+                    <div class="cta">
+                        <!-- Text Box -->
+                        <div class="cta__text-box">
+                            <div class="cta__text-heading">
+                                Get your first meal for free!
+                            </div>
+                            <div class="cta__text-desc">
+                                Healthy, tasty and hassle-free meals are waiting
+                                for you. Start eating well today. You can cancel
+                                or pause anytime. And the first meal is on us!
+                            </div>
+                            <form action="#!" class="cta__text-form">
+                                <div>
+                                    <label
+                                        for="full-name"
+                                        class="cta__text-form-label"
+                                    >
+                                        Full Name
+                                    </label>
+                                    <input
+                                        required
+                                        type="text"
+                                        id="full-name"
+                                        placeholder="John Smith"
+                                        class="cta__text-form-input"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        for="email"
+                                        class="cta__text-form-label"
+                                    >
+                                        Email address
+                                    </label>
+                                    <input
+                                        required
+                                        type="email"
+                                        id="email"
+                                        placeholder="me@example.com"
+                                        class="cta__text-form-input"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        for="select-where"
+                                        class="cta__text-form-label"
+                                    >
+                                        Where did you hear from us?
+                                    </label>
+                                    <select
+                                        required
+                                        id="select-where"
+                                        class="cta__text-form-select"
+                                    >
+                                        <option value>
+                                            Please choose one option:
+                                        </option>
+                                        <option value="friends">
+                                            Friends and family
+                                        </option>
+                                        <option value="youtobe">
+                                            YouTube video
+                                        </option>
+                                        <option value="podcast">Podcast</option>
+                                        <option value="ad">Facebook ad</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn btn--form">
+                                    Sign up now
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Img Box -->
+                        <div
+                            class="cta__img-box"
+                            role="img"
+                            aria-label="Woman enjoying food"
+                        ></div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container grid grid--footer">
+                <!-- Footer Column 1 -->
+                <div class="footer__col">
+                    <a href="#!" class="footer__logo">
+                        <img
+                            src="./assets/img/omnifood-logo.png"
+                            alt="Omnifood"
+                            class="footer__logo-img"
+                        />
+                    </a>
+
+                    <ul class="footer__social-links">
+                        <li class="footer__social-link">
+                            <i
+                                class="fa-brands fa-instagram footer__social-icon"
+                            ></i>
+                        </li>
+                        <li class="footer__social-link">
+                            <i
+                                class="fa-brands fa-facebook footer__social-icon"
+                            ></i>
+                        </li>
+                        <li class="footer__social-link">
+                            <i
+                                class="fa-brands fa-twitter footer__social-icon"
+                            ></i>
+                        </li>
+                        <li class="footer__social-link">
+                            <i
+                                class="fa-brands fa-linkedin footer__social-icon"
+                            ></i>
+                        </li>
+                    </ul>
+
+                    <p class="footer__copyright">
+                        Copyright © 2027 by Omnifood, Inc. All rights reserved.
+                    </p>
+                </div>
+
+                <!-- Footer Column 2 -->
+                <div class="footer__col">
+                    <p class="footer__heading">Contact us</p>
+                    <address class="footer__contacts">
+                        <p class="footer__address">
+                            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                        </p>
+                        <p>
+                            <a href="tel:415-201-6370" class="footer__link">
+                                415-201-6370
+                            </a>
+                            <br />
+                            <a
+                                href="mailto:hello@omnifood.com"
+                                class="footer__link"
+                            >
+                                hello@omnifood.com
+                            </a>
+                        </p>
+                    </address>
+                </div>
+
+                <!-- Footer Column 3 -->
+                <div class="footer__col">
+                    <p class="footer__heading">Account</p>
+                    <ul class="footer__list">
+                        <li class="footer__link">Create account</li>
+                        <li class="footer__link">Sign in</li>
+                        <li class="footer__link">iOS app</li>
+                        <li class="footer__link">Android app</li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 4 -->
+                <div class="footer__col">
+                    <p class="footer__heading">Company</p>
+                    <ul class="footer__list">
+                        <li class="footer__link">About Omnifood</li>
+                        <li class="footer__link">For Business</li>
+                        <li class="footer__link">Cooking partners</li>
+                        <li class="footer__link">Careers</li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 5 -->
+                <div class="footer__col">
+                    <p class="footer__heading">Resources</p>
+                    <ul class="footer__list">
+                        <li class="footer__link">Recipe directory</li>
+                        <li class="footer__link">Help center</li>
+                        <li class="footer__link">Privacy & terms</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
