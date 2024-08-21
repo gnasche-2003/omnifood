@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    column-gap: 64px;
+    row-gap: 96px;
+
+    &:not {
+        &:last-child {
+            margin-bottom: 96px;
+        }
+    }
+
+    &--2-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--3-cols {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--4-cols {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--5-cols {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &--center-v {
+        align-items: center;
+    }
+}

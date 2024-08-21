@@ -1,0 +1,536 @@
+:root {
+    --primary-color: #fdf2e9;
+    --sub-color: #cf711f;
+    --btn-color: #e67e22;
+    --text-color: #333;
+    --desc-color: #555;
+    --white-color: #fff;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+span {
+    color: var(--desc-color);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+// Button
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+
+    &--full {
+        background-color: var(--btn-color);
+        color: var(--white-color);
+
+        &:hover {
+            background-color: var(--sub-color);
+        }
+    }
+
+    &--outline {
+        color: var(--desc-color);
+        background-color: var(--white-color);
+
+        &:hover {
+            background-color: #fdf2e9;
+            box-shadow: inset 0 0 0 3px var(--white-color);
+        }
+    }
+}
+
+// Header
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    padding: 0 48px;
+    background-color: var(--primary-color);
+
+    &-logo {
+        height: 22px;
+    }
+}
+
+// Navigation
+.nav {
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &-link {
+        display: inline-block;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 1.125rem;
+        transition: all 0.3s;
+
+        &:hover {
+            color: var(--sub-color);
+        }
+
+        &.nav-cta {
+            background-color: var(--btn-color);
+
+            &:hover {
+                background-color: var(--sub-color);
+            }
+        }
+    }
+
+    &-cta {
+        color: var(--white-color);
+        background-color: var(--sub-color);
+
+        padding: 12px 24px;
+
+        &:hover {
+            color: var(--white-color);
+        }
+    }
+}
+
+// Main Content
+// Hero
+.section__hero {
+    padding: 48px 0 96px;
+    background-color: var(--primary-color);
+}
+
+.hero {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 96px;
+    align-items: center;
+
+    &__heading {
+        color: var(--text-color);
+        font-size: 3.25rem;
+        line-height: 1.05;
+        margin-bottom: 32px;
+        letter-spacing: -0.5px;
+    }
+
+    &__desc {
+        color: var(--desc-color);
+        font-size: 1.25rem;
+        line-height: 1.6;
+        margin-bottom: 48px;
+    }
+
+    &__delivered {
+        &-meals {
+            display: flex;
+            align-items: center;
+
+            gap: 32px;
+            margin-top: 80px;
+        }
+
+        &-imgs {
+            display: flex;
+        }
+
+        &-img {
+            height: 48px;
+            width: 48px;
+            border-radius: 24px;
+            margin-right: -16px;
+            border: 3px solid #fdf2e9;
+        }
+
+        &-text {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--desc-color);
+
+            span {
+                color: var(--sub-color);
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+// Featured
+.section__featured {
+    padding: 48px 0 32px;
+}
+
+.featured {
+    &__heading {
+        font-size: 0.875rem;
+        font-weight: 500;
+
+        margin-bottom: 24px;
+        letter-spacing: 0.75px;
+
+        color: #888;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__img {
+        height: 32px;
+        filter: brightness(0);
+        opacity: 0.5;
+    }
+}
+
+// How
+.section__how {
+    padding: 96px 0;
+}
+
+.how {
+    // Title
+    &__subheading {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--sub-color);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        letter-spacing: 0.75px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 2.75rem;
+        line-height: 1.2;
+        margin-bottom: 96px;
+
+        color: var(--text-color);
+        letter-spacing: -0.5px;
+    }
+
+    // Steps
+    &__step-number {
+        color: #ddd;
+
+        font-size: 5.375rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    &__step-heading {
+        font-weight: 700;
+        font-size: 1.875rem;
+        line-height: 1.2;
+        margin-bottom: 32px;
+
+        color: var(--text-color);
+        letter-spacing: -0.5px;
+    }
+
+    &__step-desc {
+        color: var(--desc-color);
+
+        line-height: 1.8;
+        font-size: 1.125rem;
+    }
+
+    &__step-img-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &::before {
+            width: 60%;
+            padding-bottom: 60%;
+            background-color: #fdf2e9;
+            z-index: -2;
+        }
+
+        &::after {
+            width: 45%;
+            padding-bottom: 45%;
+            background-color: #fae5d3;
+            z-index: -1;
+        }
+    }
+
+    &__step-img {
+        width: 35%;
+    }
+}
+
+// Meals
+.section__meals {
+    padding: 96px 0;
+}
+
+.meals {
+    &__title {
+        text-align: center;
+    }
+
+    &__subheading {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        color: var(--sub-color);
+        letter-spacing: 0.75px;
+    }
+
+    &__heading {
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 96px;
+
+        color: var(--text-color);
+        letter-spacing: -0.5px;
+    }
+
+    &__meal {
+        overflow: hidden;
+        border-radius: 11px;
+        transition: all 0.4s;
+        box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
+
+        &:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 32px 64px rgba(0, 0, 0, 0.06);
+        }
+
+        &-img {
+            width: 100%;
+        }
+
+        &-content {
+            padding: 32px 48px 48px;
+        }
+
+        &-tags {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        &-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 32px;
+            color: var(--text-color);
+        }
+
+        &-attributes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-attribute {
+            display: flex;
+            align-items: center;
+            font-size: 1.125rem;
+            gap: 16px;
+        }
+    }
+
+    &__diets {
+        &-heading {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 1.2;
+
+            margin-bottom: 32px;
+            letter-spacing: -0.5px;
+            color: var(--text-color);
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &-item {
+                display: flex;
+                align-items: center;
+                font-size: 1.125rem;
+                gap: 16px;
+            }
+        }
+    }
+
+    &__all-recipes {
+        text-align: center;
+        font-size: 1.125rem;
+
+        &--link {
+            display: inline-block;
+            color: var(--btn-color);
+            text-decoration: none;
+            border-bottom: 1px solid currentColor;
+            padding-bottom: 2px;
+            transition: all 0.3s;
+        }
+    }
+}
+
+// Tag OF Meals
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 100px;
+    color: var(--text-color);
+    text-transform: uppercase;
+
+    &__vegetable {
+        background-color: #51cf66;
+    }
+
+    &__vegan {
+        background-color: #94d82d;
+    }
+
+    &__paleo {
+        background-color: #ffd43b;
+    }
+}
+
+// Testimonials
+.section__testimonials {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 55fr 45fr;
+    background-color: var(--primary-color);
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 48px;
+    column-gap: 80px;
+
+    &-container {
+        padding: 96px;
+    }
+
+    &__subheading {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+        letter-spacing: 0.75px;
+        color: var(--sub-color);
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 96px;
+        letter-spacing: -0.5px;
+        color: var(--text-color);
+    }
+
+    &__testimonial {
+        &-img {
+            width: 64px;
+            border-radius: 32px;
+            margin-bottom: 12px;
+        }
+
+        &-text {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            color: var(--desc-color);
+        }
+
+        &-author {
+            font-size: 1rem;
+            color: #6f6f6f;
+        }
+    }
+
+    &__gallery {
+        display: grid;
+        gap: 16px;
+        padding: 16px;
+        grid-template-columns: repeat(3, 1fr);
+
+        &-item {
+            overflow: hidden;
+        }
+
+        &-img {
+            display: block;
+            width: 100%;
+            transition: all 0.4s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+// Pricing
+.section__pricing {
+    padding: 96px 0;
+}
+
+// Features
+.section__features {
+    padding: 48px 0;
+}
+
+// Cta
+
+// Footer
